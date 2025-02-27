@@ -8,6 +8,9 @@
 /* 全体のフォントスタイル */
 body {
     font-family: Arial, sans-serif; /* フォントをArialに設定 */
+
+    background-color: rgb(255, 240, 247);
+    border:3px solid hsl(81, 100%, 61%);
 }
 
 /* ナビゲーションバーのスタイル */
@@ -17,21 +20,29 @@ nav {
     display: flex; /* フレックスボックスを使用 */
     align-items: center; /* アイテムを中央に配置 */
     justify-content: space-between; /* アイテムを均等に配置 */
+
+    border:3px solid hsl(16, 85%, 66%);
 }
 
 nav ul {
     list-style-type: none; /* リストのデフォルトのマーカーを削除 */
+
+    border:3px solid hsl(124, 85%, 44%);
 }
 
 nav ul li {
     display: inline; /* リストアイテムを横並びに配置 */
     margin-right: 10px; /* 右側に10pxの余白 */
+
+    border:2px solid hsl(244, 85%, 16%);
 }
 
 nav a {
     text-decoration: none; /* リンクの下線を削除 */
     color: #333; /* リンクの文字色 */
     font-weight: bold; /* フォントの太さ */
+
+    border:2px solid hsl(301, 100%, 48%);
 }
 
 /* コンテナ全体のレイアウト */
@@ -39,24 +50,37 @@ nav a {
     display: flex; /* フレックスボックスを使用 */
     justify-content: space-around; /* 子要素を均等に配置 */
     padding: 20px; /* 内側の余白 */
+
+    border:3px solid hsl(226, 100%, 49%);
 }
+
 
 /* フォーム部分のスタイル */
 .analysisForm {
     max-width: 400px; /* フォームの最大幅を設定 */
+
+    border:3px solid hsl(167, 100%, 49%);
 }
+
 
 h1 {
     margin-bottom: 20px; /* 見出しの下部の余白 */
+
+    border:3px solid hsl(61, 100%, 58%);
 }
 
 div {
     margin-bottom: 10px; /* 各div要素の下部の余白 */
+
+    border:3px solid hsl(325, 74%, 55%);
 }
+
 
 label {
     display: inline-block; /* ラベルをインラインブロック要素に */
     width: 100px; /* ラベルの横幅 */
+
+    border:2px solid hsl(254, 73%, 65%);
 }
 
 input[type="text"],
@@ -64,6 +88,8 @@ input[type="number"],
 select {
     width: 200px; /* 入力フィールドとセレクトボックスの幅 */
     padding: 5px; /* 内側の余白 */
+
+    border:2px solid hsl(0, 100%, 50%);
 }
 
 /* ボタンのスタイル */
@@ -71,23 +97,30 @@ button {
     padding: 7px 15px; /* ボタンの内側の余白 */
     background-color: #4CAF50; /* ボタンの背景色 */
     color: white; /* ボタンの文字色 */
-    border: none; /* ボタンの枠線を削除 */
     cursor: pointer; /* カーソルをポインターに */
+
+    border:2px solid hsl(26, 86%, 35%);
 }
 
+
 button:hover {
-    background-color: #45a049; /* ホバー時の背景色 */
+    background-color: #23c4c1; /* ホバー時の背景色 */
 }
 
 /* 分析レポートセクションのスタイル */
 h2 {
     margin-top: 30px; /* h2の上部の余白 */
+
+    border:3px solid hsl(41, 96%, 33%);
 }
+
 
 #report {
     padding: 10px; /* 内側の余白 */
     max-width: 400px; /* 最大幅 */
     word-wrap: break-word; /* 長い単語を折り返し */
+
+    border:3px solid hsl(62, 56%, 50%);
 }
 
 /* 検索結果表示部分のスタイル */
@@ -96,7 +129,10 @@ h2 {
     flex-direction: column; /* アイテムを縦に並べる */
     align-items: center; /* 中央配置 */
     justify-content: center; /* 垂直方向の中央配置 */
+
+    border:3px solid hsl(185, 94%, 50%);
 }
+
 
 #result {
     height: 400px; /* 結果表示エリアの高さ */
@@ -105,9 +141,14 @@ h2 {
     align-items: center; /* アイテムを中央に配置 */
     justify-content: space-around; /* 均等に配置 */
     flex-direction: column; /* アイテムを縦に並べる */
+
+    border:3px solid hsl(0, 100%, 52%);
 }
 
 #result img {
     width: 200px; /* 画像の幅 */
     height: 100px; /* 画像の高さ */
+
+    border:5px solid hsl(267, 99%, 51%);
 }
+

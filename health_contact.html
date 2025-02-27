@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"> <!-- 文字エンコーディングをUTF-8に設定 -->
+  <title>Contact Us</title> <!-- ページのタイトルを設定 -->
+  <link rel="stylesheet" href="./health_analysis.css"> <!-- 外部CSSファイルを読み込む -->
+  <style>
+    body {
+        text-align: center; /* テキストを中央揃え */
+    }
+    /* フォーム全体の最大幅を設定し、中央揃え */
+    #contactForm {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+    /* 入力フィールドとテキストエリアの幅を100%に設定 */
+    #contactForm input,
+    #contactForm textarea {
+      width: 100%;
+      margin-bottom: 15px; /* 下のマージンを追加 */
+      padding: 8px; /* 内側の余白を設定 */
+    }
+    /* 送信ボタンのデザイン */
+    #contactForm button {
+      padding: 10px 20px; /* ボタンの内側の余白を設定 */
+      background-color: #007bff; /* ボタンの背景色を青に設定 */
+      color: white; /* 文字色を白に設定 */
+      border: none; /* 枠線なし */
+      cursor: pointer; /* マウスカーソルをポインターに */
+    }
+    /* ホバー時のボタンの背景色変更 */
+    #contactForm button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <!-- ナビゲーションメニュー -->
+  <nav>
+    <h1>Health Analysis Census</h1> <!-- ヘッダーのタイトル -->
+    <ul>
+      <li><a href="./index.html" id="home">Home </a></li> <!-- ホームへのリンク -->
+      <li><a href="./health_contact.html" id="contact">Contact Us </a></li> <!-- 問い合わせページのリンク -->
+    </ul>
+  </nav>
+
+  <!-- 問い合わせフォームのタイトル -->
+  <h1>Contact Us</h1>
+  <p>Feel free to contact us to know more about your conditions and for treatment methods.</p>
+  <!-- ユーザーが問い合わせできるフォーム -->
+  <form id="contactForm">
+    <div>
+      <label for="name">Name</label> <!-- 名前入力フィールドのラベル -->
+      <input type="text" id="name" name="name" required> <!-- 名前入力欄（必須） -->
+    </div>
+    <div>
+      <label for="email">Email</label> <!-- メールアドレス入力フィールドのラベル -->
+      <input type="email" id="email" name="email" required> <!-- メールアドレス入力欄（必須） -->
+    </div>
+    <div>
+      <label for="condition">Condition</label> <!-- 健康状態入力フィールドのラベル -->
+      <input type="text" id="condition" name="condition" required> <!-- 健康状態入力欄（必須） -->
+    </div>
+    <div>
+      <label for="message">Message</label> <!-- メッセージ入力フィールドのラベル -->
+      <textarea id="message" name="message" rows="5" required></textarea> <!-- メッセージ入力欄（必須） -->
+    </div>
+    <!-- 送信ボタン -->
+    <button type="submit" onclick="thankyou()">Submit</button>
+  </form>
+
+  <script>
+    // 送信ボタンを押した際のアラート表示
+    function thankyou() {
+        alert('Thank you for contacting us!'); // ユーザーへメッセージを表示
+    }
+  </script>
+</body>
+</html>
