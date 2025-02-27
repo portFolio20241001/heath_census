@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- HTML5文書の宣言と言語設定（英語） -->
+<head>
+  <meta charset="UTF-8"> <!-- 文字エンコーディングをUTF-8に設定 -->
+  <title>Health Analysis Data</title> <!-- Webページのタイトルを設定 -->
+  <link rel="stylesheet" href="./health_analysis.css"> <!-- 外部CSSファイルを読み込む -->
+</head>
+<body>
+   <nav> <!-- ナビゲーションメニューの開始 -->
+      <h1>Health Analysis Census</h1> <!-- サイトの見出し -->
+      <ul> <!-- リスト形式のナビゲーションメニュー -->
+          <li><a href="./index.html" id="home">Home</a></li> <!-- ホームページへのリンク -->
+          <li><a href="./health_contact.html" id="contact">Contact Us</a></li> <!-- お問い合わせページへのリンク -->
+          <li><input type="text" id="conditionInput" placeholder="Enter a health condition"></li> <!-- 健康状態を入力するテキストボックス -->
+          <li><button id='btnSearch'>Search</button></li> <!-- 検索ボタン -->
+      </ul>
+   </nav>
+
+   <div class="container"> <!-- コンテンツ全体を囲むコンテナ -->
+      <div class="analysisForm"> <!-- 健康データ分析フォームの開始 -->
+          <h1>Healthcare Data Analysis</h1> <!-- フォームの見出し -->
+          
+          <div> <!-- 名前入力フィールド -->
+              <label for="name">Name:</label> <!-- 名前のラベル -->
+              <input type="text" id="name"> <!-- 名前入力欄 -->
+          </div>
+
+          <div> <!-- 性別選択フィールド -->
+              <label>Gender:</label> <!-- 性別のラベル -->
+              <label for="male">Male</label> <!-- 男性のラベル -->
+              <input type="radio" name="gender" id="male" value="Male"> <!-- 男性のラジオボタン -->
+              <label for="female">Female</label> <!-- 女性のラベル -->
+              <input type="radio" name="gender" id="female" value="Female"> <!-- 女性のラジオボタン -->
+          </div>
+
+          <div> <!-- 年齢入力フィールド -->
+              <label for="age">Age:</label> <!-- 年齢のラベル -->
+              <input type="number" id="age"> <!-- 年齢入力欄（数値） -->
+          </div>
+
+          <div> <!-- 健康状態の選択フィールド -->
+              <label for="condition">Condition:</label> <!-- 健康状態のラベル -->
+              <select id="condition"> <!-- 健康状態を選択するドロップダウンメニュー -->
+                  <option value="">Select condition</option> <!-- デフォルトの選択肢 -->
+                  <option value="Diabetes">Diabetes</option> <!-- 糖尿病の選択肢 -->
+                  <option value="Thyroid">Thyroid</option> <!-- 甲状腺疾患の選択肢 -->
+                  <option value="High Blood Pressure">High Blood Pressure</option> <!-- 高血圧の選択肢 -->
+              </select>
+          </div>
+
+          <button id="addPatient">Add Patient</button> <!-- 患者情報を追加するボタン -->
+          
+          <h2>Analysis Report</h2> <!-- 分析結果の見出し -->
+          <div id="report"></div> <!-- 分析結果を表示する領域 -->
+      </div>
+
+      <div class="searchCondition"> <!-- 検索結果を表示する領域 -->
+          <div id="result"></div> <!-- 検索結果の出力領域 -->
+      </div>
+   </div>
+
+   <script src="./health_analysis.js"></script> <!-- 外部JavaScriptファイルを読み込む -->
+</body>
+</html>

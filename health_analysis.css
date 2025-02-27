@@ -1,0 +1,113 @@
+/* グローバルスタイルの設定 */
+* {
+    margin: 0; /* すべての要素のマージンを0に設定 */
+    padding: 0; /* すべての要素のパディングを0に設定 */
+    box-sizing: border-box; /* 要素のボックスサイズをborder-boxに設定 */
+}
+
+/* 全体のフォントスタイル */
+body {
+    font-family: Arial, sans-serif; /* フォントをArialに設定 */
+}
+
+/* ナビゲーションバーのスタイル */
+nav {
+    background-color: #f0f0f0; /* ナビゲーションバーの背景色 */
+    padding: 20px; /* ナビゲーションバー内の余白 */
+    display: flex; /* フレックスボックスを使用 */
+    align-items: center; /* アイテムを中央に配置 */
+    justify-content: space-between; /* アイテムを均等に配置 */
+}
+
+nav ul {
+    list-style-type: none; /* リストのデフォルトのマーカーを削除 */
+}
+
+nav ul li {
+    display: inline; /* リストアイテムを横並びに配置 */
+    margin-right: 10px; /* 右側に10pxの余白 */
+}
+
+nav a {
+    text-decoration: none; /* リンクの下線を削除 */
+    color: #333; /* リンクの文字色 */
+    font-weight: bold; /* フォントの太さ */
+}
+
+/* コンテナ全体のレイアウト */
+.container {
+    display: flex; /* フレックスボックスを使用 */
+    justify-content: space-around; /* 子要素を均等に配置 */
+    padding: 20px; /* 内側の余白 */
+}
+
+/* フォーム部分のスタイル */
+.analysisForm {
+    max-width: 400px; /* フォームの最大幅を設定 */
+}
+
+h1 {
+    margin-bottom: 20px; /* 見出しの下部の余白 */
+}
+
+div {
+    margin-bottom: 10px; /* 各div要素の下部の余白 */
+}
+
+label {
+    display: inline-block; /* ラベルをインラインブロック要素に */
+    width: 100px; /* ラベルの横幅 */
+}
+
+input[type="text"],
+input[type="number"],
+select {
+    width: 200px; /* 入力フィールドとセレクトボックスの幅 */
+    padding: 5px; /* 内側の余白 */
+}
+
+/* ボタンのスタイル */
+button {
+    padding: 7px 15px; /* ボタンの内側の余白 */
+    background-color: #4CAF50; /* ボタンの背景色 */
+    color: white; /* ボタンの文字色 */
+    border: none; /* ボタンの枠線を削除 */
+    cursor: pointer; /* カーソルをポインターに */
+}
+
+button:hover {
+    background-color: #45a049; /* ホバー時の背景色 */
+}
+
+/* 分析レポートセクションのスタイル */
+h2 {
+    margin-top: 30px; /* h2の上部の余白 */
+}
+
+#report {
+    padding: 10px; /* 内側の余白 */
+    max-width: 400px; /* 最大幅 */
+    word-wrap: break-word; /* 長い単語を折り返し */
+}
+
+/* 検索結果表示部分のスタイル */
+.searchCondition {
+    display: flex; /* フレックスボックスを使用 */
+    flex-direction: column; /* アイテムを縦に並べる */
+    align-items: center; /* 中央配置 */
+    justify-content: center; /* 垂直方向の中央配置 */
+}
+
+#result {
+    height: 400px; /* 結果表示エリアの高さ */
+    width: 500px; /* 結果表示エリアの幅 */
+    display: flex; /* フレックスボックス */
+    align-items: center; /* アイテムを中央に配置 */
+    justify-content: space-around; /* 均等に配置 */
+    flex-direction: column; /* アイテムを縦に並べる */
+}
+
+#result img {
+    width: 200px; /* 画像の幅 */
+    height: 100px; /* 画像の高さ */
+}
